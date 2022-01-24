@@ -7,7 +7,7 @@ namespace test
 {
     public class HalfDivider
     {
-        private int[] array = { 1, 4, 7, 4 };
+        private int[] array = { 1, 4, 7, 10 };
         //private int[] array = { 2, 5, 7 ,14, 58};
         public HalfDivider()
         {
@@ -22,7 +22,7 @@ namespace test
         private bool CanBeDevidedByHalfInner(int[] array,Stack<int> print ,int sum = 0,int index = 0)
         {
             bool result = false;
-            if (sum > array.Sum() - sum || index == array.Length)
+            if (sum > array.Sum() - sum)//|| index == array.Length
             {
                 return false;
             }
