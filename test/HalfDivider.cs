@@ -8,7 +8,11 @@ namespace test
     public class HalfDivider
     {
         //private int[] array = { 1, 4, 7, 10 };
-        private int[] array = { 2, 5, 7, 14, 18 };
+        //private int[] array = { 3,2,4,7,12};
+        private int[] array = { 3, 2, 4, 7 };
+        //private int[] array = { 2, 5, 7, 14, 18 };
+        //private int[] array = { 33, 11, 22 };
+        //private int[] array = { 56, 11, 22 };
         public HalfDivider()
         {
             string result = CanBeDevidedIntoTwo(array, new Stack<int>()) ? "Yes" : "No";
