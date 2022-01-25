@@ -12,7 +12,7 @@ namespace test
         public HalfDivider()
         {
             var result = CanBeDevidedByHalf(array);
-            Console.WriteLine($"The Collection can be devided by half: { result }");
+            Console.WriteLine($"The Collection can be devided into two: { result }");
         }
         private bool CanBeDevidedByHalf(int[] array)
         {
