@@ -37,7 +37,7 @@ namespace test
                 for (int i = index; i < array.Length; i++)
                 {
                     print.Push(array[i]);
-                    result = result || CanBeDevidedIntoTwo(array, print, sum + array[i], index + 1);
+                    result = result || CanBeDevidedIntoTwo(array, print, sum + array[i], index + 1) ;
                     print.Pop();
                 }
                 return result;
