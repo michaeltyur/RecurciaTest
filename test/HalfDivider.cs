@@ -11,14 +11,11 @@ namespace test
         private int[] array = { 2, 5, 7 ,14, 18};
         public HalfDivider()
         {
-            var result = CanBeDevidedByHalf(array);
+            var result = CanBeDevidedIntoTwo(array,new Stack<int>());
             Console.WriteLine($"The Collection can be devided into two: { result }");
         }
-        private bool CanBeDevidedByHalf(int[] array)
-        {
-            return CanBeDevidedByHalfInner(array, new Stack<int>());
-        }
-        private bool CanBeDevidedByHalfInner(int[] array,Stack<int> print ,int sum = 0,int index = 0)
+
+        private bool CanBeDevidedIntoTwo(int[] array,Stack<int> print ,int sum = 0,int index = 0)
         {
             bool result = false;
             if (sum > array.Sum() - sum)
