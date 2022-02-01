@@ -10,7 +10,8 @@ namespace test
             //Steps steps = new Steps();
             //Console.WriteLine();
             //HalfDivider halfDivider = new HalfDivider();
-            Permutation permutation = new Permutation();
+            //Permutation permutation = new Permutation();
+            Groups groups = new Groups();
             Console.ReadLine();
         }
     }

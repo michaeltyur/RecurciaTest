@@ -9,7 +9,7 @@ namespace test
     {
         public Permutation()
         {
-            string str = "ab";
+            string str = "abcd";
             RunPermutation(str, string.Empty, str.Length);
         }
         private void RunPermutation(string str, string newStr, int max)
