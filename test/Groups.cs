@@ -9,7 +9,21 @@ namespace test
         public Groups()
         {
             string text = "abcd";
-            GetGroupsRecurcivery(text, 2, string.Empty);
+            //GetGroupsRecurciveryByGroupLength(text, 2);
+            Console.WriteLine();
+            GetGroupsRecurciveryAll(text);
+        }
+        private void GetGroupsRecurciveryByGroupLength(string text, int groupLength)
+        {
+            GetGroupsRecurcivery(text, groupLength, string.Empty);
+        }
+        private void GetGroupsRecurciveryAll(string text)
+        {
+            for (int i = 0; i < text.Length; i++)
+            {
+                GetGroupsRecurcivery(text, i + 2, string.Empty);
+            }
+
         }
         private void GetGroupsRecurcivery(string text, int groupLength, string group)
         {
